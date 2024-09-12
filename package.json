@@ -1,0 +1,11 @@
+{
+  "name": "bp23ds07",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Anna Komkova",
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.94.0"
+  }
+}
