@@ -99,6 +99,28 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html'
+    }),
+
+    // Страницы разделов
+    new HtmlWebpackPlugin({
+      template: './src/articles.html',
+      filename: './articles.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/boardgames.html',
+      filename: './boardgames.html'
+    }),
+
+    // Страницы раздела статей / articles
+    new HtmlWebpackPlugin({
+      template: './src/articles/about-games.html',
+      filename: './articles/about-games.html'
+    }),
+
+    // Страницы раздела об играх / boardgames
+    new HtmlWebpackPlugin({
+      template: './src/boardgames/gloomhaven.html',
+      filename: './boardgames/gloomhaven.html'
     })
 
     // Article
