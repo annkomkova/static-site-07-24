@@ -17,7 +17,7 @@ function initThree() {
 
   //создаём сцену
   const scene = new THREE.Scene()
-  scene.background = new THREE.Color('#e1e1df')
+  scene.background = new THREE.Color('#ffffff')
   scene.position.set(0, 0, 0)
 
   //создаём камеру
@@ -28,7 +28,7 @@ function initThree() {
     3000
   )
 
-  camera.position.set(1, 1, 1)
+  camera.position.set(2, 1, 2)
 
   //создаём визуализатор-рендерер
   const renderer = new THREE.WebGLRenderer({ antialias: true })

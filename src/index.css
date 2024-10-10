@@ -1,5 +1,5 @@
-@import 'stylesheets/reset.scss';
-@import 'stylesheets/fonts.scss';
-@import 'stylesheets/vars.scss';
-@import 'stylesheets/layout.scss';
-@import 'stylesheets/main.scss';
+@import 'stylesheets/reset.css';
+@import 'stylesheets/fonts.css';
+@import 'stylesheets/vars.css';
+@import 'stylesheets/layout.css';
+@import 'stylesheets/main.css';
