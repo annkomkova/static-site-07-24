@@ -1,0 +1,21 @@
+<svg width="1260" height="700" viewBox="0 0 1260 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_73_47)">
+<rect width="1260" height="700" fill="#181819"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 50C0 22.3858 22.3858 0 50 0H891C918.614 0 941 22.3858 941 50V50C941 77.6142 963.386 100 991 100H1210C1237.61 100 1260 122.386 1260 150V550C1260 577.614 1237.61 600 1210 600H1079C1051.39 600 1029 622.386 1029 650V650C1029 677.614 1006.61 700 979 700H50C22.3858 700 0 677.614 0 650V50Z" fill="#F8F6F4"/>
+<ellipse cx="724" cy="531.5" rx="724" ry="531.5" fill="url(#paint0_radial_73_47)"/>
+<path d="M1029 650C1029 622.386 1051.39 600 1079 600H1260V700H1029V650Z" fill="#181819"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1210.02 600H1260L1260 550C1260 577.608 1237.62 599.989 1210.02 600ZM1210 550L1210 600V550L1210 550Z" fill="#181819"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1029 700V650C1029 677.614 1006.61 700 979 700H1029Z" fill="#181819"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_73_47" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(724 531.5) rotate(90) scale(531.5 724)">
+<stop offset="0.16271" stop-color="#F9EDD7"/>
+<stop offset="0.26271" stop-color="#F9EDD7"/>
+<stop offset="0.57771" stop-color="#F7EDDB" stop-opacity="0.6"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_73_47">
+<rect width="1260" height="700" fill="white"/>
+</clipPath>
+</defs>
+</svg>
