@@ -2,6 +2,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const webpack = require('webpack')
 const path = require('path')
@@ -121,6 +122,19 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/boardgames/gloomhaven.html',
       filename: './boardgames/gloomhaven.html'
+    }),
+
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, './src/3d'),
+          to: path.resolve(__dirname, './dev_build/3d')
+        },
+        {
+          from: path.resolve(__dirname, './src/3d'),
+          to: path.resolve(__dirname, './docs/3d')
+        }
+      ]
     })
 
     // Article

@@ -6,32 +6,38 @@
     <title>Document</title>
     <link rel="icon" href="images/favicon.png" type="image/png" />
   </head>
-  <body>
-    <h1>Сайт о настольных играх</h1>
+  <body class="index">
+    <div class="wrapper">
+      <nav>
+        <h1>Сайт о настольных играх</h1>
 
-    <h2>Разделы</h2>
-    <p><a href="articles.html">Статьи</a></p>
-    <p><a href="boardgames.html">Игры</a></p>
+        <h2>Разделы</h2>
+        <p><a href="articles.html">Статьи</a></p>
+        <p><a href="boardgames.html">Игры</a></p>
 
-    <h2>Примеры статей</h2>
-    <p><a href="articles/about-games.html">О настольных играх</a></p>
+        <h2>Примеры статей</h2>
+        <p><a href="articles/about-games.html">О настольных играх</a></p>
 
-    <h2>Примеры настольных игр</h2>
-    <p><a href="boardgames/gloomhaven.html">Gloomhaven</a></p>
+        <h2>Примеры настольных игр</h2>
+        <p><a href="boardgames/gloomhaven.html">Gloomhaven</a></p>
+        <form
+          id="my-form"
+          action="https://formspree.io/f/xeoqjqqg"
+          method="POST"
+        >
+          <!-- <label>Email:</label> -->
+          <input type="email" name="email" placeholder="Введите почту" />
 
-    <!-- modify this form HTML and place wherever you want your form -->
-    <form id="my-form" action="https://formspree.io/f/xeoqjqqg" method="POST">
-      <!-- <label>Email:</label> -->
-      <input type="email" name="email" placeholder="Введите почту" />
-
-      <!-- <label>Message:</label>
+          <!-- <label>Message:</label>
       <input type="text" name="message" /> -->
 
-      <button id="my-form-button">Отправить</button>
-      <p id="my-form-status"></p>
-    </form>
+          <button id="my-form-button">Отправить</button>
+          <p id="my-form-status"></p>
+        </form>
+      </nav>
+      <div class="model"></div>
+    </div>
 
-    <!-- Place this script at the end of the body tag -->
     <script>
       var form = document.getElementById('my-form')
 
