@@ -124,6 +124,12 @@ module.exports = {
       filename: './boardgames/gloomhaven.html'
     }),
 
+    // Pages
+    new HtmlWebpackPlugin({
+      template: './src/pages/theory.html',
+      filename: './pages/theory.html'
+    }),
+
     new CopyPlugin({
       patterns: [
         {
