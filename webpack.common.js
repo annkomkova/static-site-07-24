@@ -10,7 +10,8 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    dices: './src/javascripts/dices.js'
+    dices: './src/javascripts/dices.js',
+    swiper: './src/javascripts/swiper.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -108,7 +109,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/articles.html',
       filename: './articles.html',
-      chunks: ['index']
+      chunks: ['index', 'swiper']
     }),
     new HtmlWebpackPlugin({
       template: './src/boardgames.html',
@@ -148,7 +149,7 @@ module.exports = {
           to: path.resolve(__dirname, './docs/3d')
         }
       ]
-    })
+    }),
 
     // Article
     // new HtmlWebpackPlugin({
@@ -157,14 +158,14 @@ module.exports = {
     // }),
 
     // Partials
-    // new HtmlWebpackPartialsPlugin([
-    //   {
-    //     path: path.join(__dirname, './src/partials/analytics.html'),
-    //     location: 'analytics',
-    //     template_filename: '*',
-    //     priority: 'replace'
-    //   }
-    // ])
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/footer.html'),
+        location: 'footerPart',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ])
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]

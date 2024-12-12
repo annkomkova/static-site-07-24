@@ -5,11 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Статьи</title>
     <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
+    <nav>
+      <a href="index.html">На главную</a>
+      <a href="articles/about-games.html">О настольных играх</a>
+    </nav>
     <h1>Статьи</h1>
-    <p><a href="index.html">На главную</a></p>
-    <h2>Примеры статей</h2>
-    <p><a href="articles/about-games.html">О настольных играх</a></p>
+
+    <div class="slider">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <a href="articles/about-games.html" class="slideLink firstSlide">
+              <div class="slideTags">
+                <p class="slideTag">теория</p>
+                <p class="slideTag">для начинающих</p>
+              </div>
+              <h3 class="slideHeader">
+                Как устроены настольные игры: ключевые механики, элементы и
+                сеттинг
+              </h3>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="articles/about-games.html" class="slideLink secondSlide">
+              <div class="slideTags">
+                <p class="slideTag">теория</p>
+                <p class="slideTag">для продвинутых</p>
+              </div>
+              <h3 class="slideHeader">
+                Как прописать баланс в настольной игре
+              </h3>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="articles/about-games.html" class="slideLink thirdSlide">
+              <div class="slideTags">
+                <p class="slideTag">практика</p>
+                <p class="slideTag">для начинающих</p>
+              </div>
+              <h3 class="slideHeader">Топ-10 настолок для больших компаний</h3>
+            </a>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </div>
+    <footerPart></footerPart>
   </body>
 </html>
