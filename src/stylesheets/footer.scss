@@ -1,0 +1,26 @@
+footer {
+  width: 100%;
+  background-color: #f5f5f5;
+  margin-top: 4rem;
+  padding: 2rem;
+  border-radius: 2rem 2rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    h4 {
+      font-size: 1.2rem;
+      text-decoration: underline;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(134, 181, 255);
+    }
+  }
+}

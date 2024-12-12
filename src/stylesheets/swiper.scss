@@ -1,0 +1,96 @@
+.slider {
+  width: 100%;
+  padding: 2rem;
+  height: 40vw;
+  max-height: 450px;
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-pagination-bullet-active {
+      background-color: white;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      color: white;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .swiper-button-next::after {
+      background-image: url('https://img.icons8.com/?size=100&id=98968&format=png&color=FFFFFF');
+    }
+    .swiper-button-prev::after {
+      background-image: url('https://img.icons8.com/?size=100&id=98961&format=png&color=FFFFFF');
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 2rem;
+      height: 2rem;
+    }
+    .swiper-slide {
+      border-radius: 2rem;
+    }
+
+    .slideLink {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      padding: 2rem;
+      gap: 1rem;
+      color: white;
+      border-radius: 2rem;
+
+      &.firstSlide {
+        background: rgb(167, 148, 232);
+        background: radial-gradient(
+          circle,
+          rgba(167, 148, 232, 1) 0%,
+          rgba(233, 148, 173, 1) 100%
+        );
+      }
+      &.secondSlide {
+        background: rgb(232, 181, 148);
+        background: radial-gradient(
+          circle,
+          rgba(232, 181, 148, 1) 0%,
+          rgba(233, 148, 148, 1) 100%
+        );
+      }
+      &.thirdSlide {
+        background: rgb(148, 169, 232);
+        background: radial-gradient(
+          circle,
+          rgba(148, 169, 232, 1) 0%,
+          rgba(148, 233, 217, 1) 100%
+        );
+      }
+
+      .slideHeader {
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
+        width: 80%;
+      }
+      .slideTags {
+        display: flex;
+        gap: 1rem;
+
+        .slideTag {
+          padding: 0.6rem 1rem;
+          border: 1px solid white;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}
