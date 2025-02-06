@@ -1,0 +1,22 @@
+/*_________________________body_________________*/
+body.dictionary {
+  background-color: #1e1e1e;
+}
+
+/*_________________________ADC_Dictionary_______*/
+.S_Stories {
+  max-width: 984px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px auto;
+
+  /*
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 12px;
+  margin: 0 auto;
+  align-items: center;
+   */
+}
