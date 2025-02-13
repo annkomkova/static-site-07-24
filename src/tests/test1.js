@@ -1,3 +1,7 @@
+import '../stylesheets/tests.scss'
+import imgResult from '../images/tests/test1.png'
+import { initTest, chooseAnswer } from './showTests.js'
+
 //база данных: список вопросов и ответов
 const stages = [
   //этап1
@@ -115,3 +119,27 @@ const stages = [
     ]
   }
 ]
+
+const results = [
+  {
+    preview: 'Ого, да вы знаток!',
+    text: 'Сколько десятков настолок вы уже сыграли?'
+  },
+  {
+    preview: 'Сразу видно любителя посидеть в компании за настолками',
+    text: 'Вы уже не новичок, но ещё есть, что поизучать'
+  },
+  {
+    preview: 'Кажется, вы только недавно узнали о настольных играх',
+    text: 'Впереди вас ждёт ещё много открытий!'
+  },
+  {
+    image: `${imgResult}`
+  }
+]
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.clear()
+  initTest(stages)
+  chooseAnswer(stages, results)
+})
