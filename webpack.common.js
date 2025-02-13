@@ -11,7 +11,10 @@ module.exports = {
   entry: {
     index: './src/index.js',
     dices: './src/javascripts/dices.js',
-    swiper: './src/javascripts/swiper.js'
+    swiper: './src/javascripts/swiper.js',
+    dictionary: './src/dictionary/dictionary.js',
+    jsBasic: './src/jsBasic/jsBasic.js',
+    test: './src/tests/test1.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -136,6 +139,27 @@ module.exports = {
       template: './src/pages/theory.html',
       filename: './pages/theory.html',
       chunks: ['index']
+    }),
+
+    // ADC Dictionary
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/dictionary.html',
+      filename: './dictionary/dictionary.html',
+      chunks: ['dictionary']
+    }),
+
+    // Основы JS
+    new HtmlWebpackPlugin({
+      template: './src/jsBasic/jsBasic.html',
+      filename: './jsBasic/jsBasic.html',
+      chunks: ['jsBasic']
+    }),
+
+    //Тесты
+    new HtmlWebpackPlugin({
+      template: './src/tests/test1.html',
+      filename: './tests/test1.html',
+      chunks: ['index', 'test']
     }),
 
     new CopyPlugin({

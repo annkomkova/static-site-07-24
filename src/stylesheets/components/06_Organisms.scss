@@ -1,0 +1,18 @@
+/*_________________________ADC_Dictionary_______*/
+.O_Story {
+  width: 320px;
+  height: 568px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 52px 10px 22px 10px;
+
+  .A_AnswerMessage {
+    margin-left: 32px;
+  }
+  .A_Question {
+    margin-bottom: 10px;
+    align-self: flex-end;
+  }
+}
