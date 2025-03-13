@@ -76,3 +76,30 @@
     transition: all 0.4s ease;
   }
 }
+
+.A_ArticleHeader {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.A_FilterTag {
+  background-color: white;
+  color: cornflowerblue;
+  border: 2px solid cornflowerblue;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+
+  &.active {
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+  }
+  &:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+.A_ArticleCardHeader {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
