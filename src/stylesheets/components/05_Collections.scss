@@ -12,3 +12,32 @@
   justify-content: flex-start;
   gap: 2rem;
 }
+.C_Chips {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+  min-height: 2.5rem;
+  padding: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  position: relative;
+
+  &:active {
+    border: 2px solid cornflowerblue;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    top: 0.8rem;
+    right: 0.5rem;
+    background-image: url('https://img.icons8.com/material-rounded/48/delete-sign.png');
+    background-size: cover;
+    opacity: 0.7;
+  }
+}

@@ -1,7 +1,37 @@
 console.clear()
 document.addEventListener('DOMContentLoaded', () => {
   initFilter()
+  initMultiselect()
 })
+
+function initMultiselect() {
+  const label = document.querySelector('.C_Chips')
+  const select = document.querySelector('.M_SelectField')
+  const text = label.innerHTML
+
+  select.addEventListener('change', function () {
+    let selectedOptions = this.selectedOptions
+    label.innerHTML = ''
+
+    for (let option of selectedOptions) {
+      let chip = document.createElement('button')
+      chip.classList.add('A_Chip')
+      chip.type = 'button'
+      chip.textContent = option.value
+
+      label.appendChild(chip)
+
+      chip.addEventListener('click', () => {
+        option.selected = false
+        chip.remove()
+
+        if (!select.selectedOptions.length) {
+          label.innerHTML = text
+        }
+      })
+    }
+  })
+}
 
 function initFilter() {
   const tags = document.querySelectorAll('.A_FilterTag')
