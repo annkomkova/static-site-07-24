@@ -15,7 +15,8 @@ module.exports = {
     dictionary: './src/dictionary/dictionary.js',
     jsBasic: './src/jsBasic/jsBasic.js',
     test: './src/tests/test1.js',
-    filterCards: './src/javascripts/filterCards.js'
+    filterCards: './src/javascripts/filterCards.js',
+    searchVanilla: './src/javascripts/search-vanilla.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -161,6 +162,13 @@ module.exports = {
       template: './src/tests/test1.html',
       filename: './tests/test1.html',
       chunks: ['index', 'test']
+    }),
+
+    //Поиск
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['index', 'searchVanilla']
     }),
 
     new CopyPlugin({

@@ -2,8 +2,8 @@ import './index.css'
 import Cookies from 'js-cookie'
 
 document.addEventListener('DOMContentLoaded', () => {
-  initSwitch()
-  changeTheme()
+  // initSwitch()
+  // changeTheme()
 })
 
 const toggleSwitch = document.querySelector('.A_Checkbox')
