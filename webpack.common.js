@@ -16,7 +16,8 @@ module.exports = {
     jsBasic: './src/jsBasic/jsBasic.js',
     test: './src/tests/test1.js',
     filterCards: './src/javascripts/filterCards.js',
-    searchVanilla: './src/javascripts/search-vanilla.js'
+    searchVanilla: './src/javascripts/search-vanilla.js',
+    reactBasics: './src/javascripts/react-basics.jsx'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -155,6 +156,11 @@ module.exports = {
       template: './src/jsBasic/jsBasic.html',
       filename: './jsBasic/jsBasic.html',
       chunks: ['jsBasic']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/react-basics.html',
+      filename: './react-basics.html',
+      chunks: ['reactBasics']
     }),
 
     //Тесты
