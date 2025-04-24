@@ -17,6 +17,7 @@ module.exports = {
     test: './src/tests/test1.js',
     filterCards: './src/javascripts/filterCards.js',
     searchVanilla: './src/javascripts/search-vanilla.js',
+    searchReact: './src/javascripts/search.jsx',
     reactBasics: './src/javascripts/react-basics.jsx',
     articleContent: './src/javascripts/articleContent.js'
   },
@@ -185,7 +186,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/search.html',
       filename: './search.html',
-      chunks: ['index', 'searchVanilla']
+      chunks: ['index', 'searchReact']
+      // 'searchVanilla' для ванильного поиска
     }),
 
     new CopyPlugin({
