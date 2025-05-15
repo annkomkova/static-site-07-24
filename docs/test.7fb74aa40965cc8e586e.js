@@ -50,7 +50,7 @@ var resultCount = 0;
 var currentStage = 0;
 function initTest(stages) {
   var numberOfQuestion = document.querySelector('.A_NumberOfQuestion');
-  var question = document.querySelector('.A_Question');
+  var question = document.querySelector('.A_TestQuestion');
   numberOfQuestion.innerHTML = "\u0432\u043E\u043F\u0440\u043E\u0441 \u2116".concat(currentStage + 1, "/").concat(stages.length);
   question.innerHTML = stages[currentStage].question;
   for (var i = 0; i < answers.length; i++) {
