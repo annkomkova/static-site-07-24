@@ -5,7 +5,7 @@ let currentStage = 0
 
 function initTest(stages) {
   const numberOfQuestion = document.querySelector('.A_NumberOfQuestion')
-  const question = document.querySelector('.A_Question')
+  const question = document.querySelector('.A_TestQuestion')
 
   numberOfQuestion.innerHTML = `вопрос №${currentStage + 1}/${stages.length}`
   question.innerHTML = stages[currentStage].question

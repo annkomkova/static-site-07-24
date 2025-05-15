@@ -3,4 +3,9 @@
 }
 body {
   font-family: 'PT Root UI';
+
+  &.dark {
+    background-color: rgb(55, 55, 55);
+    color: white;
+  }
 }

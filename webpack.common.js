@@ -14,7 +14,12 @@ module.exports = {
     swiper: './src/javascripts/swiper.js',
     dictionary: './src/dictionary/dictionary.js',
     jsBasic: './src/jsBasic/jsBasic.js',
-    test: './src/tests/test1.js'
+    test: './src/tests/test1.js',
+    filterCards: './src/javascripts/filterCards.js',
+    searchVanilla: './src/javascripts/search-vanilla.js',
+    searchReact: './src/javascripts/search.jsx',
+    reactBasics: './src/javascripts/react-basics.jsx',
+    articleContent: './src/javascripts/articleContent.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -112,7 +117,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/articles.html',
       filename: './articles.html',
-      chunks: ['index', 'swiper']
+      chunks: ['index', 'swiper', 'filterCards']
     }),
     new HtmlWebpackPlugin({
       template: './src/boardgames.html',
@@ -124,7 +129,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/articles/about-games.html',
       filename: './articles/about-games.html',
-      chunks: ['index']
+      chunks: ['index', 'articleContent']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/eclipse.html',
+      filename: './articles/eclipse.html',
+      chunks: ['index', 'articleContent']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/era-konana.html',
+      filename: './articles/era-konana.html',
+      chunks: ['index', 'articleContent']
     }),
 
     // Страницы раздела об играх / boardgames
@@ -154,12 +169,25 @@ module.exports = {
       filename: './jsBasic/jsBasic.html',
       chunks: ['jsBasic']
     }),
+    new HtmlWebpackPlugin({
+      template: './src/react-basics.html',
+      filename: './react-basics.html',
+      chunks: ['reactBasics']
+    }),
 
     //Тесты
     new HtmlWebpackPlugin({
       template: './src/tests/test1.html',
       filename: './tests/test1.html',
       chunks: ['index', 'test']
+    }),
+
+    //Поиск
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['index', 'searchVanilla']
+      // 'searchVanilla' для ванильного поиска
     }),
 
     new CopyPlugin({
@@ -186,6 +214,15 @@ module.exports = {
       {
         path: path.join(__dirname, './src/partials/footer.html'),
         location: 'footerPart',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/analytics.html'),
+        location: 'analytics',
         template_filename: '*',
         priority: 'replace'
       }

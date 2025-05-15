@@ -34,5 +34,13 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0",
     "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "airtable": "^0.12.2",
+    "classnames": "^2.5.1",
+    "js-cookie": "^3.0.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.174.0"
   }
 }
