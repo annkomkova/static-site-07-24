@@ -186,7 +186,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/search.html',
       filename: './search.html',
-      chunks: ['index', 'searchReact']
+      chunks: ['index', 'searchVanilla']
       // 'searchVanilla' для ванильного поиска
     }),
 
@@ -214,6 +214,15 @@ module.exports = {
       {
         path: path.join(__dirname, './src/partials/footer.html'),
         location: 'footerPart',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/analytics.html'),
+        location: 'analytics',
         template_filename: '*',
         priority: 'replace'
       }
