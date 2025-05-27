@@ -1,3 +1,4 @@
+<% const { menubar } = require('./javascripts/menubar.js') %>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -49,6 +50,9 @@
     <analytics></analytics>
   </head>
   <body class="index">
+    <div class="S_MenuBar"><%= menubar %></div>
+  </body>
+  <!-- <body class="index">
     <div class="M_Switch">
       <input type="checkbox" class="A_Checkbox" />
       <span class="A_Switch"></span>
@@ -71,11 +75,9 @@
           action="https://formspree.io/f/xeoqjqqg"
           method="POST"
         >
-          <!-- <label>Email:</label> -->
           <input type="email" name="email" placeholder="Введите почту" />
 
-          <!-- <label>Message:</label>
-      <input type="text" name="message" /> -->
+
 
           <button id="my-form-button">Отправить</button>
           <p id="my-form-status"></p>
@@ -227,5 +229,5 @@
     </script>
 
     <footerPart></footerPart>
-  </body>
+  </body> -->
 </html>

@@ -19,7 +19,8 @@ module.exports = {
     searchVanilla: './src/javascripts/search-vanilla.js',
     searchReact: './src/javascripts/search.jsx',
     reactBasics: './src/javascripts/react-basics.jsx',
-    articleContent: './src/javascripts/articleContent.js'
+    articleContent: './src/javascripts/articleContent.js',
+    menuBar: './src/javascripts/menubar.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -108,9 +109,9 @@ module.exports = {
 
     // Index
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index.ejs',
       filename: './index.html',
-      chunks: ['index', 'dices']
+      chunks: ['index', 'menuBar']
     }),
 
     // Страницы разделов
