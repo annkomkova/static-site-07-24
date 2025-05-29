@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://annkomkova.github.io/static-site-07-24/</loc>
+  </url>
+  <url><loc>https://annkomkova.github.io/static-site-07-24/articles.html</loc></url>
+  <url><loc>https://annkomkova.github.io/static-site-07-24/boardgames.html</loc></url>
+  <url><loc>https://annkomkova.github.io/static-site-07-24/react-basics.html</loc></url>
+  <url><loc>https://annkomkova.github.io/static-site-07-24/search.html</loc></url>
+  <url><loc>https://annkomkova.github.io/static-site-07-24/articles/about-games.html</loc></url>
+  <url><loc>https://annkomkova.github.io/static-site-07-24/articles/eclipse.html</loc></url>
+  <url><loc>https://annkomkova.github.io/static-site-07-24/articles/era-konana.html</loc></url>
+  <url><loc>https://annkomkova.github.io/static-site-07-24/boardgames/gloomhaven.html</loc></url>
+  <url><loc>https://annkomkova.github.io/static-site-07-24/dictionary/dictionary.html</loc></url>
+  <url><loc>https://annkomkova.github.io/static-site-07-24/jsBasic/jsBasic.html</loc></url>
+  <url><loc>https://annkomkova.github.io/static-site-07-24/pages/theory.html</loc></url>
+  <url><loc>https://annkomkova.github.io/static-site-07-24/tests/test1.html</loc></url>
+</urlset>

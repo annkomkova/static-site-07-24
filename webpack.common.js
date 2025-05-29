@@ -3,9 +3,26 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const SitemapPlugin = require('sitemap-webpack-plugin').default
 
 const webpack = require('webpack')
 const path = require('path')
+
+const paths = [
+  '/static-site-07-24/',
+  '/static-site-07-24/articles.html',
+  '/static-site-07-24/boardgames.html',
+  '/static-site-07-24/react-basics.html',
+  '/static-site-07-24/search.html',
+  '/static-site-07-24/articles/about-games.html',
+  '/static-site-07-24/articles/eclipse.html',
+  '/static-site-07-24/articles/era-konana.html',
+  '/static-site-07-24/boardgames/gloomhaven.html',
+  '/static-site-07-24/dictionary/dictionary.html',
+  '/static-site-07-24/jsBasic/jsBasic.html',
+  '/static-site-07-24/pages/theory.html',
+  '/static-site-07-24/tests/test1.html'
+]
 
 module.exports = {
   entry: {
@@ -226,7 +243,12 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       }
-    ])
+    ]),
+
+    new SitemapPlugin({
+      base: 'https://annkomkova.github.io/static-site-07-24',
+      paths
+    })
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
