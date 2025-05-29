@@ -1,9 +1,9 @@
+<% const {menubar} = require('./javascripts/menubar.js') %>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="icon" href="images/favicon.png" type="image/png" />
     <!-- Primary Meta Tags -->
     <title>Настолочная</title>
@@ -49,11 +49,13 @@
     <analytics></analytics>
   </head>
   <body class="index">
+    <nav class="S_MenuBar"><%= menubar %></nav>
+
     <div class="M_Switch">
       <input type="checkbox" class="A_Checkbox" />
       <span class="A_Switch"></span>
     </div>
-    <div class="wrapper">
+    <!-- <div class="wrapper">
       <nav>
         <h1>Сайт о настольных играх</h1>
 
@@ -71,18 +73,16 @@
           action="https://formspree.io/f/xeoqjqqg"
           method="POST"
         >
-          <!-- <label>Email:</label> -->
           <input type="email" name="email" placeholder="Введите почту" />
 
-          <!-- <label>Message:</label>
-      <input type="text" name="message" /> -->
+    
 
           <button id="my-form-button">Отправить</button>
           <p id="my-form-status"></p>
         </form>
       </nav>
       <div class="model"></div>
-    </div>
+    </div> -->
 
     <section class="categoryGames">
       <h2>Во что поиграть?</h2>
@@ -165,7 +165,7 @@
           <h3>Бункер</h3>
         </div>
         <div class="cardGame sizeM">
-          <img src="images/cardGames/srednevekovie.webp" alt="" />
+          <img src="images/cardGames/srednevekovie.webp" alt="." />
           <div class="cardInfo">
             <div class="cardTags">
               <div class="cardTag">
@@ -189,7 +189,7 @@
       </div>
     </section>
 
-    <script>
+    <!-- <script>
       var form = document.getElementById('my-form')
 
       async function handleSubmit(event) {
@@ -224,7 +224,7 @@
           })
       }
       form.addEventListener('submit', handleSubmit)
-    </script>
+    </script> -->
 
     <footerPart></footerPart>
   </body>

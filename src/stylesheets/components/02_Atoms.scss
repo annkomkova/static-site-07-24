@@ -256,3 +256,20 @@
     padding: 4px 8px;
   }
 }
+.A_MainMenu {
+  color: grey;
+  text-decoration: none;
+
+  &:hover {
+    color: #1a1a1a;
+    transition: color ease 0.6s;
+  }
+
+  &.logo {
+    background-image: url('../../images/favicon.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+}
